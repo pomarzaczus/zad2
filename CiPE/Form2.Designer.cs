@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem("mointor1");
-            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem("mointor2");
-            System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem("moinitor3");
+            System.Windows.Forms.ListViewItem listViewItem4 = new System.Windows.Forms.ListViewItem("mointor1");
+            System.Windows.Forms.ListViewItem listViewItem5 = new System.Windows.Forms.ListViewItem("mointor2");
+            System.Windows.Forms.ListViewItem listViewItem6 = new System.Windows.Forms.ListViewItem("moinitor3");
             this.listView1 = new System.Windows.Forms.ListView();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -40,11 +40,15 @@
             // 
             // listView1
             // 
+            
+            listViewItem4.Tag = 1;
+            listViewItem5.Tag = 2;
+            listViewItem6.Tag = 3;
             this.listView1.HideSelection = false;
             this.listView1.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem1,
-            listViewItem2,
-            listViewItem3});
+            listViewItem4,
+            listViewItem5,
+            listViewItem6});
             this.listView1.Location = new System.Drawing.Point(193, 63);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(351, 194);
@@ -77,6 +81,7 @@
             this.ok.TabIndex = 3;
             this.ok.Text = "ok";
             this.ok.UseVisualStyleBackColor = true;
+            this.ok.Click += new System.EventHandler(this.ok_Click);
             // 
             // anuluj
             // 
@@ -86,6 +91,7 @@
             this.anuluj.TabIndex = 4;
             this.anuluj.Text = "anuluj";
             this.anuluj.UseVisualStyleBackColor = true;
+            this.anuluj.Click += new System.EventHandler(this.anuluj_Click);
             // 
             // Form2
             // 
