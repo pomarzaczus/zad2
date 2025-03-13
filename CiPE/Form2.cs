@@ -25,8 +25,8 @@ namespace CiPE
 
         private void listView1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            listView1.SelectedItems.ToString();
-         
+           
+            textBox1.Text = listView1.SelectedItems.ToString();
          
         }
     }
