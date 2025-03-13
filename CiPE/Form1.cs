@@ -51,7 +51,8 @@ namespace CiPE
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            Form3 test = new Form3(this);
+            test.Show();
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
