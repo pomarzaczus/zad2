@@ -22,8 +22,9 @@ namespace CiPE
         public delegate void Form1Delegate(int var);
         public  void changeNumber(int var)
         {
-            textBox2.Text = var.ToString();
-            value = var;
+            value += var;
+            textBox2.Text = value.ToString();
+            
             
         }
 
